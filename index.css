@@ -1,0 +1,158 @@
+/*  */
+h5{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0px;
+    padding: 0px; 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:cadetblue;
+}
+.inner_container{
+    background-color: cornflowerblue;
+    width: 400px;
+    border: 2px dotted white;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px papayawhip;
+}
+/* input field */
+.input_field_container{
+    height: 60px;
+    width: 400px;
+}
+.input_form{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.input_form form i{
+    position: absolute;
+    font-size: 35px;
+    top: 12px;
+    left: 10px;
+}
+.input_form button{
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    height: 26px;
+    width: 31px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input_form input{
+    width: 88%;
+    height: 60px;
+    padding-left: 45px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #96b8f5;
+    outline: none;
+    border: 1px dotted white;
+}
+.input_form #plus_icon{
+    position: absolute;
+    top: -7px;
+    left: -4px;
+}
+/* task information */
+.complete_task_info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    border-bottom: 1px dotted white;
+    margin: 10px 0px;
+}
+.complete_task{
+    display: flex;
+    margin-left: 15px;
+
+}.checked{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+/* display the tasks */
+
+#task_display{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dotted white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task{
+    width: 80%;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task_title{
+    display: flex;
+    align-items: center;
+}
+.task_title i{
+    margin-right: 10px;
+    font-size: 17px;
+}
+.task_title p{
+    font-size: 20px;
+}
+.fa-times-circle{
+    font-size: 25px;
+    display: none;
+    margin-top: -10px;
+    color: red;
+}
+.text_color{
+    color: white;
+}
+.fa-flask{
+    color: white;
+}
+
+.task:hover .fa-times-circle{
+    display: block;
+    cursor: pointer;
+}
+/* bottom task information */
+.task_info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   height: 40px;
+}
+.task_type{
+    display: flex;
+}
+.task_type div{
+    margin-right: 10px;
+}
+.task_left{
+    margin-left: 20px;
+}
+.task_left p span{
+    color: white;
+}
+#clear_complete{
+    margin-left: -110px;
+}
+#complete_task{
+    margin-left: 20px;
+}
+#all{
+    color: white;
+}
