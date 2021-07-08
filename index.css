@@ -18,7 +18,7 @@ p{
 }
 .inner_container{
     background-color: cornflowerblue;
-    width: 400px;
+    width: 500px;
     border: 2px dotted white;
     height: auto;
     border-radius: 10px;
@@ -27,7 +27,7 @@ p{
 /* input field */
 .input_field_container{
     height: 60px;
-    width: 400px;
+    width: 496px;
 }
 .input_form{
     position: relative;
@@ -38,12 +38,12 @@ p{
     position: absolute;
     font-size: 35px;
     top: 12px;
-    left: 10px;
+    left:20px;
 }
 .input_form button{
     position: absolute;
-    right: 30px;
-    top: 16px;
+    right: 55px;
+    top: 18px;
     height: 26px;
     width: 31px;
     border-radius: 10px;
@@ -52,7 +52,7 @@ p{
 .input_form input{
     width: 88%;
     height: 60px;
-    padding-left: 45px;
+    padding-left: 60px;
     font-size: 25px;
     border-radius: 10px;
     background-color: #96b8f5;
