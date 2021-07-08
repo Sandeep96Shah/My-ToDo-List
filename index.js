@@ -10,7 +10,7 @@ function todo_task(){
     let task = document.getElementById('my_task').value;
     document.getElementById('my_task').value='';
     if(task == ''){
-        alert("Please Enter You Task");
+        alert("Please Enter Your Task");
         return;
     }
 
