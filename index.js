@@ -9,6 +9,10 @@ function todo_task(){
     //getting the input field value
     let task = document.getElementById('my_task').value;
     document.getElementById('my_task').value='';
+    if(task == ''){
+        alert("Please Enter You Task");
+        return;
+    }
 
     //creating the p tag and assigning the input text to it
     let para = document.createElement('p');
@@ -40,13 +44,21 @@ function todo_task(){
     outer_div.appendChild(inner_div_2);
     
     //outer_div.appendChild(inner_div_2);
-    let taskDisplay = document.getElementById('task_display');
+    let taskDisplay = document.getElementById('your_task');
     taskDisplay.appendChild(outer_div);
 
     //for couting the total number of tasks
     count++;
     totalTask.innerText=count;
     
+}
+
+function complete_all_tasks(){
+    let yourTask = document.getElementById('your_task');
+    let totalTask = document.getElementById('total_task');
+    count = 0;
+    totalTask.innerText=count;
+    yourTask.parentNode.removeChild(yourTask);
 }
 
 

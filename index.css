@@ -82,6 +82,10 @@ p{
     margin-right: 5px;
     font-size: 15px;
 }
+#complete_task_id{
+    cursor: pointer;
+}
+
 
 /* display the tasks */
 
@@ -98,6 +102,14 @@ p{
     height:40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#your_task{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dotted white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .task_title{
