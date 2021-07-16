@@ -16,21 +16,26 @@
 
      <div class="container">
         <div class="inner_container">
+            <!-- for the input field -->
             <div class="input_field_container">
                 <div class="input_form">
                     <form id="input_form_field">
                         <i class="fas fa-file-alt"></i>
+                        <!-- here id is assigned to get the task while displaying dynamically -->
                         <input type="text" id="my_task" name="task" placeholder="Type Your ToDo List">
+                        <!-- event listener is added to add the task dynamically -->
                         <button onclick="todo_task();"><i class="fas fa-plus-circle" id="plus_icon"></i></button>
                     </form>
                 </div>
             </div>
+            <!-- to display some info about task -->
             <div class="complete_task_info">
                 <div class="complete_task">
                     <div class="checked">
                         <i class="fas fa-check-double"></i>
                     </div>
                     <div>
+                        <!-- event listener to delete all task -->
                         <p onclick="complete_all_tasks();" id="complete_task_id">Complete All Tasks</p>
                     </div>
                 </div>
@@ -38,6 +43,7 @@
                     <p id="clear_complete">Clear Complete</p>
                 </div>
             </div>
+            <!-- to display the added tasks -->
             <div id="task_display">
                 <div class="task">
                     <div class="task_title">
@@ -45,6 +51,7 @@
                         <p class="text_color">Your Tasks Are:</p>
                     </div>
                 </div>
+                <!-- this is the way the task is added dynamically -->
                 <div id="your_task">
                     <!-- <div outer_div>
                         <div -inner_div_1>
@@ -57,10 +64,13 @@
                     </div> -->
                 </div>
             </div>
+            <!-- to display the number of tasks left -->
             <div class="task_info">
                 <div class="task_left">
+                    <!-- to display the number of tasks -->
                     <p><span id="total_task">0</span> Tasks Left</p>
                 </div>
+                <!-- this are just text -->
                 <div class="task_type">
                     <div id="all">
                         <p>All</p>

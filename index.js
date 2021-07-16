@@ -1,7 +1,10 @@
+//for counting the number of tasks left to be completed
 var count=0;
+//this function gets executed to create task dynamically
 function todo_task(){
 
     let form = document.getElementById('input_form_field');
+    //preventing the default value on submit
     form.addEventListener('submit',(e)=>{
         e.preventDefault();
     })
@@ -52,7 +55,7 @@ function todo_task(){
     totalTask.innerText=count;
     
 }
-
+//function to delete the entire task and make the count value 0
 function complete_all_tasks(){
     let yourTask = document.getElementById('your_task');
     let totalTask = document.getElementById('total_task');
